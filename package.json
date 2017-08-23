@@ -9,6 +9,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
     "path": "^0.12.7",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
@@ -17,5 +18,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
-  "main": "index.jsx"
+  "main": "index.jsx",
+  "scripts": {
+    "start": "webpack-dev-server"
+  }
 }
