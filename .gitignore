@@ -10,5 +10,14 @@ submodules
 yarn.lock
 package-lock.json
 
+### Packaged Files ###
+lib
+.eslintcache
+
 ### Build ###
 public/
+
+### Logs ###
+logs
+*.log
+npm-debug.log*

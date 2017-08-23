@@ -8,7 +8,8 @@ const APP_DIR = path.resolve(__dirname, 'src');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: APP_DIR + '/index.html',
   filename: 'index.html',
-  inject: 'body'
+  inject: 'body',
+  favicon: 'assets/images/favicon.ico'
 });
 
 module.exports = {
@@ -35,8 +36,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('css-loader')
+        loader: ExtractTextPlugin.extract('css-loader'),
+        exclude: /node_modules/
+      },
+      {
+        test: /\.(png|jpg|gif|svg|ico)$/,
+        loader: 'file-loader?name=[path][name].[ext]',
+        exclude: /node_modules/
       }
+
     ]
   }
 }
