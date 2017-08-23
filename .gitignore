@@ -1,0 +1,13 @@
+### OSX ###
+.DS_Store
+
+### WebStorm ###
+.idea/
+
+### Dependencies ###
+node_modules
+submodules
+yarn.lock
+
+### Build ###
+public/
