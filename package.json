@@ -1,13 +1,17 @@
 {
   "name": "react-babel-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "React.js Babel Webpack Boilerplate",
-  "main": "index.jsx",
   "author": "Marcus E. Turnbo <marcus@emarcus.com>",
+  "description": "React.js Babel Webpack Boilerplate",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "path": "^0.12.7",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
-  }
+  },
+  "main": "index.jsx"
 }
