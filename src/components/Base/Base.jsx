@@ -1,13 +1,12 @@
 import React from 'react';
-import styles from './base.css';
+import './base.css';
 
-class Base extends React.Component {
+export default class Base extends React.Component {
   render() {
     return (
-      <div className={styles.base}>
-        <h1>Base Component</h1>
+      <div className="base">
+        <div className="base-header">{this.props.title}</div>
+        <div className="base-content">{this.props.content}</div>
       </div>);
   }
 }
-
-export default Base;
