@@ -4,7 +4,7 @@ import styles from './base.css';
 class Base extends React.Component {
   render() {
     return (
-      <div className="base">
+      <div className={styles.base}>
         <h1>Base Component</h1>
       </div>);
   }

@@ -44,7 +44,6 @@ module.exports = {
         loader: 'file-loader?name=[path][name].[ext]',
         exclude: /node_modules/
       }
-
     ]
   }
-}
+};
