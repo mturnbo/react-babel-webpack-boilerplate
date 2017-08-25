@@ -43,6 +43,11 @@ module.exports = {
         test: /\.(png|jpg|gif|svg|ico)$/,
         loader: 'file-loader?name=[path][name].[ext]',
         exclude: /node_modules/
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader',
+        exclude: /node_modules/
       }
     ]
   }
