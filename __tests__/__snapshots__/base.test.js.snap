@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Base Component Renders 1`] = `
+<Base
+  content="Blah blah blah"
+  title="Test"
+>
+  <div
+    className="base"
+  >
+    <div
+      className="base-header"
+    >
+      Test
+    </div>
+    <div
+      className="base-content"
+    >
+      Blah blah blah
+    </div>
+  </div>
+</Base>
+`;
