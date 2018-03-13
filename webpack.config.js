@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'public');
 const APP_DIR = path.resolve(__dirname, 'src');
+const ASSETS_DIR = path.resolve(__dirname, 'assets');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: APP_DIR + '/index.html',
@@ -12,33 +13,47 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   favicon: 'assets/images/favicon.ico'
 });
 
+const extractSass = new ExtractTextPlugin({
+  filename: 'styles.css'
+});
+
 module.exports = {
   entry: APP_DIR + '/index.jsx',
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    sourceMapFilename: '[name].map'
   },
   plugins: [
     HtmlWebpackPluginConfig,
-    new ExtractTextPlugin('styles.css')
+    extractSass
   ],
   module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        loader: 'babel-loader',
+        include: APP_DIR,
+        exclude: /node_modules/
+      },
+      {
+        test: /\.(s*)css$/,
+        use: extractSass.extract({
+          use: [
+            {
+              loader: 'css-loader'
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                includePaths: [APP_DIR, ASSETS_DIR]
+              }
+            }
+          ]
+        })
+      }
+    ],
     loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.jsx$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('css-loader'),
-        exclude: /node_modules/
-      },
       {
         test: /\.(png|jpg|gif|svg|ico)$/,
         loader: 'file-loader?name=[path][name].[ext]',
@@ -50,5 +65,10 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
+  },
+  resolve: {
+    alias: {
+      'assets': ASSETS_DIR
+    }
   }
 };
