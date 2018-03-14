@@ -1,6 +1,7 @@
 # React Babel Webpack Boilerplate
 
-This is a boilerplate for starting a React project.
+This is a boilerplate for starting a React project.  It contains an
+App wrapper with a Base component and Base component container.
 
 ## Features:
 * React.js - React 16

@@ -1,9 +1,13 @@
 {
   "name": "react-babel-webpack-boilerplate",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Marcus E. Turnbo <marcus@emarcus.com>",
   "description": "React.js Babel Webpack Boilerplate",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mturnbo/react-babel-webpack-boilerplate.git"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",

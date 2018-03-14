@@ -1,5 +1,8 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.3.0
+* *Feature*: Added Base Container
+
 #### v.1.2.0
 * *Feature*: Added SASS support
 

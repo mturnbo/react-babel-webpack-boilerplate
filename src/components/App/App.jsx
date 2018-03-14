@@ -1,21 +1,17 @@
 import React from 'react';
-import Base from '../Base';
-import data from '../../data/data.json';
-import './app.css';
+import BaseContainer from '../../containers/BaseContainer';
+import './app.scss';
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
-    let baseComponents = data.map((entry) => {
-      return <Base title={entry.title} content={entry.content} />;
-    });
-
     return (
-      <div>
+      <div className="app-container">
         <h1>React App</h1>
         <hr />
-        <div className="container">
-          {baseComponents}
-        </div>
-      </div>);
+        <BaseContainer />
+      </div>
+    );
   }
 }
+
+export default App;
