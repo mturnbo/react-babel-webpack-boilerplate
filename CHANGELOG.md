@@ -1,5 +1,8 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.4.0
+* *Feature*: Added Button Component
+
 #### v.1.3.0
 * *Feature*: Added Base Container
 

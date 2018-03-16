@@ -5,8 +5,8 @@ import './baseContainer.scss';
 
 class BaseContainer extends React.Component {
   render() {
-    const baseList = data.map(entry =>
-      <Base title={entry.title} content={entry.content} />
+    const baseList = data.map((entry, index) =>
+      <Base title={entry.title} content={entry.content} key={index} />
     );
 
     return (
