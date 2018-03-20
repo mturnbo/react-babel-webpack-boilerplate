@@ -1,6 +1,6 @@
 import React from 'react';
+import { mount } from 'enzyme';
 import BaseContainer from '../src/containers/BaseContainer';
-import { shallow, mount } from 'enzyme';
 
 const wrapper = mount(<BaseContainer />);
 

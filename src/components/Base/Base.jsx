@@ -1,14 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '../Button';
-import './base.scss';
+import './Base.scss';
 
 const Base = ({ title, content }) => {
-
-  const clickAction = () => {
-    alert(`${title} Button Clicked`);
-  };
-
   const buttonLabel = `${title} Button`;
 
   return (
@@ -16,7 +11,7 @@ const Base = ({ title, content }) => {
       <div className="base-header">{title}</div>
       <div className="base-content">{content}</div>
       <div className="base-button">
-        <Button label={buttonLabel} onClick={clickAction} />
+        <Button label={buttonLabel} />
       </div>
     </div>
   );

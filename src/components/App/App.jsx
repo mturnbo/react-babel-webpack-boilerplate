@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseContainer from '../../containers/BaseContainer';
-import './app.scss';
+import './App.scss';
 
 class App extends React.Component {
   render() {

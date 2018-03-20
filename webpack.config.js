@@ -68,7 +68,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'assets': ASSETS_DIR
+      assets: ASSETS_DIR
     }
   }
 };

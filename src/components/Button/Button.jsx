@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './button.scss';
+import './Button.scss';
 
 const Button = ({ label, onClick }) => {
   return (
@@ -12,5 +12,12 @@ Button.propTypes = {
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func
 };
+
+Button.defaultProps = {
+  label: 'Click Me',
+  onClick: () => alert('clicked')
+};
+
+// Button.prototype.defaultClickAction
 
 export default Button;

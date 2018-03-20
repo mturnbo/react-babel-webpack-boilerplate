@@ -1,12 +1,12 @@
 import React from 'react';
 import Base from '../../components/Base';
 import data from '../../data/data.json';
-import './baseContainer.scss';
+import './BaseContainer.scss';
 
 class BaseContainer extends React.Component {
   render() {
     const baseList = data.map((entry, index) =>
-      <Base title={entry.title} content={entry.content} key={index} />
+      <Base title={entry.title} content={entry.content} key={index.toString()} />
     );
 
     return (

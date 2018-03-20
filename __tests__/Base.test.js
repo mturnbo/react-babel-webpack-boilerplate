@@ -1,6 +1,6 @@
 import React from 'react';
+import { mount } from 'enzyme';
 import Base from '../src/components/Base';
-import { shallow, mount } from 'enzyme';
 
 const wrapper = mount(<Base title="Test" content="Blah blah blah" />);
 
