@@ -18,6 +18,21 @@ exports[`Base Component Renders 1`] = `
     >
       Blah blah blah
     </div>
+    <div
+      className="base-button"
+    >
+      <Button
+        label="Test Button"
+        onClick={[Function]}
+      >
+        <button
+          className="btn"
+          onClick={[Function]}
+        >
+          Test Button
+        </button>
+      </Button>
+    </div>
   </div>
 </Base>
 `;
