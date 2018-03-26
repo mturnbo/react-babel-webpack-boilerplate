@@ -1,4 +1,4 @@
-.container {
+.stateless-functional-component-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,4 +12,10 @@
   -moz-box-shadow: #B3B3B3 10px 10px 10px;
   box-shadow: #B3B3B3 10px 10px 10px;
   margin: 20px;
+
+  h1, h2 {
+    flex-basis: 100%;
+    overflow: hidden;
+    padding-left: 20px;
+  }
 }

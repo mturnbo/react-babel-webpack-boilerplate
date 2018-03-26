@@ -4,6 +4,6 @@ import Base from './index';
 
 const wrapper = mount(<Base title="Test" content="Blah blah blah" />);
 
-test('Base Component Renders', () => {
+test('ClassComponent Component Renders', () => {
   expect(wrapper).toMatchSnapshot();
 });
