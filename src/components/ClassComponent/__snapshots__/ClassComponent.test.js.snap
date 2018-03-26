@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClassComponent Component Renders 1`] = `
+<ClassComponent
+  content="Blah blah blah"
+  title="Test"
+>
+  <div
+    className="class-component"
+  >
+    <div
+      className="header"
+    >
+      Test
+    </div>
+    <div
+      className="content"
+    >
+      Blah blah blah
+    </div>
+    <div
+      className="button-container"
+    >
+      <Button
+        label="Test Button"
+        onClick={[Function]}
+      >
+        <button
+          className="btn"
+          onClick={[Function]}
+        >
+          Test Button
+        </button>
+      </Button>
+    </div>
+  </div>
+</ClassComponent>
+`;

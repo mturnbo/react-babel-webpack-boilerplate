@@ -1,5 +1,12 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.5.0
+* *Feature*: Changed base component to class component
+* *Feature*: Updated base component container
+* *Feature*: Added stateless base component
+* *Feature*: Added stateless base component container
+* *Fix*: Updated webpack config to resolve .js, .json, and .jsx extensions
+
 #### v.1.4.0
 * *Feature*: Added Button Component
 

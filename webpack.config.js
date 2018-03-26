@@ -69,6 +69,7 @@ module.exports = {
   resolve: {
     alias: {
       assets: ASSETS_DIR
-    }
+    },
+    extensions: ['.js', '.json', '.jsx']
   }
 };

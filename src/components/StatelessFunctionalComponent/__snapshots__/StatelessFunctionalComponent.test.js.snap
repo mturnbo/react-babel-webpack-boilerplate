@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Base Component Renders 1`] = `
-<Base
+exports[`ClassComponent Component Renders 1`] = `
+<StatelessFunctionalComponent
   content="Blah blah blah"
   title="Test"
 >
   <div
-    className="base"
+    className="stateless-functional-component"
   >
     <div
-      className="base-header"
+      className="header"
     >
       Test
     </div>
     <div
-      className="base-content"
+      className="content"
     >
       Blah blah blah
     </div>
     <div
-      className="base-button"
+      className="button-container"
     >
       <Button
         label="Test Button"
@@ -34,5 +34,5 @@ exports[`Base Component Renders 1`] = `
       </Button>
     </div>
   </div>
-</Base>
+</StatelessFunctionalComponent>
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
-import BaseContainer from '../../containers/BaseContainer';
+import ClassComponentContainer from '../../containers/ClassComponentContainer';
+import StatelessFunctionalComponentContainer from '../../containers/StatelessFunctionalComponentContainer';
 import './App.scss';
 
 class App extends React.Component {
@@ -8,7 +9,8 @@ class App extends React.Component {
       <div className="app-container">
         <h1>React App</h1>
         <hr />
-        <BaseContainer />
+        <ClassComponentContainer />
+        <StatelessFunctionalComponentContainer />
       </div>
     );
   }
