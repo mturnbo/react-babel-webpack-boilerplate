@@ -40,9 +40,9 @@
   },
   "main": "index.jsx",
   "scripts": {
+    "build": "webpack",
     "start": "webpack-dev-server",
     "lint": "eslint --cache --ignore-path .gitignore --ext .jsx,.js .",
-    "test": "jest --config=jest.config.json",
-    "build": "webpack"
+    "test": "jest --config=jest.config.json"
   }
 }
