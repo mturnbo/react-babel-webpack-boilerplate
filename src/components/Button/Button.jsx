@@ -2,7 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.scss';
 
-const Button = ({ label, onClick }) => <button className="btn" onClick={onClick}>{label}</button>;
+class Button extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      label: this.props.label,
+      clicks: 0
+    }
+  }
+
+  incrementClickCount = () => {
+    let numClicks = this.state.clicks + 1;
+    this.setState({
+      label: `Clicked ${numClicks.toString()} time(s)`,
+      clicks: numClicks
+    })
+  };
+
+  render() {
+    return (
+      <button className="btn" onClick={this.props.onClick || this.incrementClickCount}>{this.state.label}</button>
+    );
+  }
+}
 
 Button.propTypes = {
   label: PropTypes.string.isRequired,
@@ -10,10 +32,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  label: 'Click Me',
-  onClick: () => alert('clicked')
+  label: 'Click Me'
 };
-
-// Button.prototype.defaultClickAction
 
 export default Button;

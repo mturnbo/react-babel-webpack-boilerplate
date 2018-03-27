@@ -1,5 +1,8 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.6.0
+* *Feature*: Added click count to Button component
+
 #### v.1.5.0
 * *Feature*: Changed base component to class component
 * *Feature*: Updated base component container
