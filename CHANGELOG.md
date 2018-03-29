@@ -1,5 +1,9 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.7.0
+* *Feature*: Moved App to containers.
+* *Feature*: Added header and footer components
+
 #### v.1.6.0
 * *Feature*: Added click count to Button component
 
