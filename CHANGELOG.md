@@ -1,5 +1,8 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.8.0
+* *Feature*: Added Storybook
+
 #### v.1.7.0
 * *Feature*: Moved App to containers.
 * *Feature*: Added header and footer components
