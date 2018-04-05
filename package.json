@@ -1,6 +1,6 @@
 {
   "name": "react-babel-webpack-boilerplate",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "author": "Marcus E. Turnbo <marcus@emarcus.com>",
   "description": "React.js Babel Webpack Boilerplate",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "url": "https://github.com/mturnbo/react-babel-webpack-boilerplate.git"
   },
   "devDependencies": {
+    "@storybook/react": "^3.4.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.2",
@@ -44,6 +45,7 @@
     "build": "webpack",
     "start": "webpack-dev-server",
     "lint": "eslint --cache --ignore-path .gitignore --ext .jsx,.js .",
-    "test": "jest --config=jest.config.json"
+    "test": "jest --config=jest.config.json",
+    "storybook": "start-storybook -p 9091 -c .storybook"
   }
 }
