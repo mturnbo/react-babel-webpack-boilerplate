@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const BUILD_DIR = path.resolve(__dirname, 'public');
 const APP_DIR = path.resolve(__dirname, 'src');
@@ -13,10 +13,6 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   favicon: 'assets/images/favicon.ico'
 });
 
-const extractSass = new ExtractTextPlugin({
-  filename: 'styles.css'
-});
-
 module.exports = {
   entry: APP_DIR + '/index.jsx',
   output: {
@@ -26,43 +22,36 @@ module.exports = {
   },
   plugins: [
     HtmlWebpackPluginConfig,
-    extractSass
+    new MiniCssExtractPlugin({
+      filename: 'styles.css'
+    })
   ],
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        loader: 'babel-loader',
         include: APP_DIR,
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
       },
       {
-        test: /\.(s*)css$/,
-        use: extractSass.extract({
-          use: [
-            {
-              loader: 'css-loader'
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                includePaths: [APP_DIR, ASSETS_DIR]
-              }
-            }
-          ]
-        })
-      }
-    ],
-    loaders: [
+        test: /\.s?[ac]ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader'
+        ]
+      },
       {
         test: /\.(png|jpg|gif|svg|ico)$/,
-        loader: 'file-loader?name=[path][name].[ext]',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.json$/,
-        loader: 'json-loader',
-        exclude: /node_modules/
+        use: [
+          {
+            loader: 'file-loader?name=[path][name].[ext]',
+            options: {}
+          }
+        ]
       }
     ]
   },

@@ -1,5 +1,11 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.9.0
+* *Feature*: Updated Webpack to version 4
+
+#### v.1.8.1
+* *Feature*: Added license 
+
 #### v.1.8.0
 * *Feature*: Added Storybook
 
