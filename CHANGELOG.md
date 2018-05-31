@@ -1,13 +1,16 @@
 # React Babel Webpack Boilerplate
 
 #### v.1.9.0
-* *Feature*: Updated Webpack to version 4
+* *Dependency*: Added babel-preset-env
+
+#### v.1.9.0
+* *Dependency*: Updated Webpack to version 4
 
 #### v.1.8.1
 * *Feature*: Added license 
 
 #### v.1.8.0
-* *Feature*: Added Storybook
+* *Dependency*: Added Storybook
 
 #### v.1.7.0
 * *Feature*: Moved App to containers.
@@ -30,7 +33,7 @@
 * *Feature*: Added Base Container
 
 #### v.1.2.0
-* *Feature*: Added SASS support
+* *Dependency*: Added SASS support
 
 #### v.1.1.0
-* *Feature*: Added Jest for testing
+* *Dependency*: Added Jest for testing
