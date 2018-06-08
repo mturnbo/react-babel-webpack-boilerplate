@@ -1,6 +1,10 @@
 # React Babel Webpack Boilerplate
 
-#### v.1.9.0
+#### v.1.9.2
+* *Feature*: Added props to Header and Footer components.
+* *Fix*: Fixed linting errors
+
+#### v.1.9.1
 * *Dependency*: Added babel-preset-env
 
 #### v.1.9.0

@@ -8,8 +8,7 @@ class ClassComponent extends React.Component {
     super(props);
     this.state = {
       data1: 'data1',
-      data2: 'data2',
-      data3: 'data3'
+      data2: 'data2'
     };
   }
 
@@ -30,7 +29,7 @@ class ClassComponent extends React.Component {
       </div>
     );
   }
-};
+}
 
 ClassComponent.propTypes = {
   title: PropTypes.string.isRequired,

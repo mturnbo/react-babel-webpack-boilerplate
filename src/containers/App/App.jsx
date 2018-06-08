@@ -9,11 +9,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <Header />
+        <Header title="React Babel Webpack Boilerplate" />
         <hr />
         <ClassComponentContainer />
         <StatelessFunctionalComponentContainer />
-        <Footer />
+        <Footer title="Footer" />
       </div>
     );
   }

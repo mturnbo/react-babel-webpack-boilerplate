@@ -6,8 +6,7 @@ import './StatelessFunctionalComponentContainer.scss';
 class StatelessFunctionalComponentContainer extends React.Component {
   render() {
     const componentList = data.map((entry, index) =>
-      <StatelessFunctionalComponent title={entry.title} content={entry.content} key={index.toString()} />
-    );
+      <StatelessFunctionalComponent title={entry.title} content={entry.content} key={index.toString()} />);
 
     return (
       <div className="stateless-functional-component-container">

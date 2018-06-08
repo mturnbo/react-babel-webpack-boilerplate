@@ -1,14 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Footer.scss';
 
-class Footer extends React.Component {
-  render() {
-    return (
-      <footer className="app-footer">
-        <h2>Footer</h2>
-      </footer>
-    );
-  }
-}
+const Footer = (props) => (
+  <footer className="app-footer">
+    <h2>{props.title}</h2>
+  </footer>
+);
+
+Footer.propTypes = {
+  title: PropTypes.string.isRequired
+};
 
 export default Footer;

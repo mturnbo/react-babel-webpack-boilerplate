@@ -6,8 +6,7 @@ import './ClassComponentContainer.scss';
 class ClassComponentContainer extends React.Component {
   render() {
     const componentList = data.map((entry, index) =>
-      <ClassComponent title={entry.title} content={entry.content} key={index.toString()} />
-    );
+      <ClassComponent title={entry.title} content={entry.content} key={index.toString()} />);
 
     return (
       <div className="class-component-container">
