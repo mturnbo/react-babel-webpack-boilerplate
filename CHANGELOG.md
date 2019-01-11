@@ -1,5 +1,9 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.8.3
+* *Update*: Changed build path to `dist`
+* *Update*: Ignoring `__snapshots__` 
+
 #### v.1.8.2
 * *Update*: Updated paths in webpack config
 * *Update*: Updated paths in storybook webpack config
