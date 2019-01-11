@@ -2,15 +2,17 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const BUILD_DIR = path.resolve(__dirname, 'public');
-const APP_DIR = path.resolve(__dirname, 'src');
-const ASSETS_DIR = path.resolve(__dirname, 'assets');
+const BASE_PATH = path.resolve(__dirname, '');
+const MODULES_PATH = path.join(BASE_PATH, 'node_modules');
+const BUILD_PATH = path.join(BASE_PATH, 'public');
+const APP_PATH = path.join(BASE_PATH, 'src');
+const ASSETS_PATH = path.join(BASE_PATH, 'assets');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: APP_DIR + '/index.html',
+  template: APP_PATH + '/index.html',
   filename: 'index.html',
   inject: 'body',
-  favicon: 'assets/images/favicon.ico'
+  favicon: ASSETS_PATH + '/images/favicon.ico'
 });
 
 const extractSass = new ExtractTextPlugin({
@@ -18,9 +20,9 @@ const extractSass = new ExtractTextPlugin({
 });
 
 module.exports = {
-  entry: APP_DIR + '/index.jsx',
+  entry: APP_PATH + '/index.js',
   output: {
-    path: BUILD_DIR,
+    path: BUILD_PATH,
     filename: 'bundle.js',
     sourceMapFilename: '[name].map'
   },
@@ -33,8 +35,8 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
-        include: APP_DIR,
-        exclude: /node_modules/
+        include: APP_PATH,
+        exclude: MODULES_PATH
       },
       {
         test: /\.(s*)css$/,
@@ -46,7 +48,7 @@ module.exports = {
             {
               loader: 'sass-loader',
               options: {
-                includePaths: [APP_DIR, ASSETS_DIR]
+                includePaths: [APP_PATH, ASSETS_PATH]
               }
             }
           ]
@@ -57,18 +59,20 @@ module.exports = {
       {
         test: /\.(png|jpg|gif|svg|ico)$/,
         loader: 'file-loader?name=[path][name].[ext]',
-        exclude: /node_modules/
+        exclude: MODULES_PATH
       },
       {
         test: /\.json$/,
         loader: 'json-loader',
-        exclude: /node_modules/
+        exclude: MODULES_PATH
       }
     ]
   },
   resolve: {
     alias: {
-      assets: ASSETS_DIR
+      assets: ASSETS_PATH,
+      components: path.join(APP_PATH, 'components'),
+      containers: path.join(APP_PATH, 'containers')
     },
     extensions: ['.js', '.json', '.jsx']
   }

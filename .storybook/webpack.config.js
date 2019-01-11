@@ -1,7 +1,9 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const APP_DIR = path.resolve(__dirname, 'src');
+const BASE_PATH = path.resolve(__dirname, '../');
+const APP_PATH = path.join(BASE_PATH, 'src');
+const ASSETS_PATH = path.join(BASE_PATH, 'assets');
 
 const extractSass = new ExtractTextPlugin({
   filename: 'styles.css'
@@ -21,7 +23,7 @@ module.exports = {
           }, {
             loader: "sass-loader",
             options: {
-              includePaths: [APP_DIR]
+              includePaths: [APP_PATH]
             }
           }],
           fallback: 'style-loader'
@@ -30,6 +32,11 @@ module.exports = {
     ]
   },
   resolve: {
+    alias: {
+      assets: ASSETS_PATH,
+      components: path.join(APP_PATH, 'components'),
+      containers: path.join(APP_PATH, 'containers')
+    },
     extensions: ['.js', '.json', '.jsx', '.css', '.scss']
   }
 };

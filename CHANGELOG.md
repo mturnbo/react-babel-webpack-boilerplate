@@ -1,5 +1,11 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.8.2
+* *Update*: Updated paths in webpack config
+* *Update*: Updated paths in storybook webpack config
+* *Update*: Updated paths in jest config
+* *Update*: Added testUrl (for jsdom) to Jest config to fix `localStorage is not available for opaque origins` error
+
 #### v.1.8.0
 * *Feature*: Added Storybook
 

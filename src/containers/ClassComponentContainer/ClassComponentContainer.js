@@ -1,5 +1,5 @@
 import React from 'react';
-import ClassComponent from '../../components/ClassComponent';
+import ClassComponent from 'components/ClassComponent';
 import data from '../../data/data.json';
 import './ClassComponentContainer.scss';
 

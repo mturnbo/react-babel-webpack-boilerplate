@@ -1,5 +1,5 @@
 import React from 'react';
-import StatelessFunctionalComponent from '../../components/StatelessFunctionalComponent';
+import StatelessFunctionalComponent from 'components/StatelessFunctionalComponent';
 import data from '../../data/data.json';
 import './StatelessFunctionalComponentContainer.scss';
 
