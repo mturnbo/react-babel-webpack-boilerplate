@@ -1,5 +1,8 @@
 # React Babel Webpack Boilerplate
 
+#### v.1.8.4
+* *Update*: Added jsconfig for VS Code
+
 #### v.1.8.3
 * *Update*: Changed build path to `dist`
 * *Update*: Ignoring `__snapshots__` 
