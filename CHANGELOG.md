@@ -1,5 +1,8 @@
 # React Babel Webpack Boilerplate
 
+#### v.2.0.0
+* *Update*: Refactor components
+
 #### v.1.8.4
 * *Update*: Added jsconfig for VS Code
 

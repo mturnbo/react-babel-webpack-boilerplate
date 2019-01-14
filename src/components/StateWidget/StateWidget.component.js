@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from 'components/Button';
-import './ClassComponent.scss';
+import './StateWidget.component.scss';
 
-class ClassComponent extends React.Component {
+class StateWidget extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,7 +21,7 @@ class ClassComponent extends React.Component {
     const buttonLabel = `${this.props.title} Button`;
 
     return (
-      <div className="class-component">
+      <div className="state-widget">
         <div className="header">{this.props.title}</div>
         <div className="content">{this.props.content}</div>
         <div className="button-container">
@@ -32,9 +32,9 @@ class ClassComponent extends React.Component {
   }
 };
 
-ClassComponent.propTypes = {
+StateWidget.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired
 };
 
-export default ClassComponent;
+export default StateWidget;
