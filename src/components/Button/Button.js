@@ -8,16 +8,16 @@ class Button extends React.Component {
     this.state = {
       label: this.props.label,
       clicks: 0
-    }
+    };
   }
 
-  incrementClickCount = () => {
-    let numClicks = this.state.clicks + 1;
+  incrementClickCount() {
+    const numClicks = this.state.clicks + 1;
     this.setState({
       label: `Clicked ${numClicks.toString()} time(s)`,
       clicks: numClicks
-    })
-  };
+    });
+  }
 
   render() {
     return (

@@ -30,7 +30,7 @@ class ClassComponent extends React.Component {
       </div>
     );
   }
-};
+}
 
 ClassComponent.propTypes = {
   title: PropTypes.string.isRequired,
