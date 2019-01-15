@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from 'components/Button';
-import './StatelessFunctionalComponent.scss';
+import './Widget.scss';
 
-const StatelessFunctionalComponent = ({ title, content }) => {
+const Widget = ({ title, content }) => {
   const buttonLabel = `${title} Button`;
 
   return (
-    <div className="stateless-functional-component">
+    <div className="widget">
       <div className="header">{title}</div>
       <div className="content">{content}</div>
       <div className="button-container">
@@ -17,9 +17,9 @@ const StatelessFunctionalComponent = ({ title, content }) => {
   );
 };
 
-StatelessFunctionalComponent.propTypes = {
+Widget.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired
 };
 
-export default StatelessFunctionalComponent;
+export default Widget;

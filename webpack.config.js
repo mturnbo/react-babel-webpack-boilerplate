@@ -21,6 +21,7 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
   entry: APP_PATH + '/index.js',
+  devtool: 'eval-source-map',
   output: {
     path: BUILD_PATH,
     filename: 'bundle.js',
@@ -72,7 +73,7 @@ module.exports = {
     alias: {
       assets: ASSETS_PATH,
       components: path.join(APP_PATH, 'components'),
-      containers: path.join(APP_PATH, 'containers')
+      data: path.join(APP_PATH, 'data')
     },
     extensions: ['.js', '.json', '.jsx']
   }

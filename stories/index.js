@@ -1,5 +1,4 @@
-export { default as HeaderStory } from './Header';
-export { default as FooterStory } from './Footer';
-export { default as ClassComponentStory } from './ClassComponent';
-export { default as StatelessFunctionalComponentStory } from './StatelessFunctionalComponent';
-export { default as ButtonStory } from './Button';
+export { default as HeaderStory } from './Header.story';
+export { default as FooterStory } from './Footer.story';
+export { default as ButtonStory } from './Button.story';
+export { default as Widget } from './Widget.story';
