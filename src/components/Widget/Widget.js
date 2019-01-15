@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from 'components/Button';
-import './PresentationWidget.component.scss';
+import './Widget.scss';
 
-const PresentationWidget = ({ title, content }) => {
+const Widget = ({ title, content }) => {
   const buttonLabel = `${title} Button`;
 
   return (
-    <div className="presentation-widget">
+    <div className="widget">
       <div className="header">{title}</div>
       <div className="content">{content}</div>
       <div className="button-container">
@@ -17,9 +17,9 @@ const PresentationWidget = ({ title, content }) => {
   );
 };
 
-PresentationWidget.propTypes = {
+Widget.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired
 };
 
-export default PresentationWidget;
+export default Widget;

@@ -2,12 +2,11 @@
 
 This is a boilerplate for starting a React project.  It contains the following components:
 * App Component
-* Class Component (StateWidget)
-* Stateless Functional Component (PresentationWidget)
-* Class Component Container
-* Stateless Functional Component Container
+* Header Component
+* Footer Component
+* Widget Component
+* Widget Container
 * Button Component
-
 
 ## Features:
 * React.js - React 16
