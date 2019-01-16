@@ -1,6 +1,6 @@
 {
   "name": "react-babel-webpack-boilerplate",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Marcus E. Turnbo <marcus@emarcus.com>",
   "description": "React.js Babel Webpack Boilerplate",
   "license": "MIT",
@@ -9,7 +9,6 @@
     "url": "https://github.com/mturnbo/react-babel-webpack-boilerplate.git"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.2",
@@ -19,6 +18,7 @@
     "css-loader": "^0.28.5",
     "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
@@ -31,9 +31,11 @@
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.7",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1"
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "@storybook/addon-actions": "^4.1.6",
+    "@storybook/react": "^3.4.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "prop-types": "^15.6.1",

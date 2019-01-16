@@ -1,5 +1,11 @@
 # React Babel Webpack Boilerplate
 
+#### v.2.0.1
+* *Update*: Updated `webpack-dev-server` version
+* *Feature*: Added basic test for Header component
+* *Feature*: Added basic test for Footer component
+* *Feature*: Added basic test for Button component
+
 #### v.2.0.0
 * *Update*: Refactor components
 

@@ -4,15 +4,15 @@ This is a boilerplate for starting a React project.  It contains the following c
 * App Component
 * Header Component
 * Footer Component
+* Button Component
 * Widget Component
 * Widget Container
-* Button Component
 
 ## Features:
 * React.js - React 16
 * Babel - ES6, ESNext, Airbnb and React/Recommended config
 * Webpack 3 with Webpack Dev Server
-* ESLint
+* ESLint with Airbnb's style 
 * SCSS Styling
 * Jest with Enzyme
 * Storybook

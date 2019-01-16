@@ -7,5 +7,3 @@ const wrapper = mount(<Widget title="Test" content="Blah blah blah" />);
 test('Widget Component Renders', () => {
   expect(wrapper).toMatchSnapshot();
 });
-
-
