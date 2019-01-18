@@ -1,5 +1,8 @@
 # React Babel Webpack Boilerplate
 
+#### v.2.1.0
+* *Feature*: Added Docker container configuration with nginx on port 8081
+
 #### v.2.0.1
 * *Update*: Updated `webpack-dev-server` version
 * *Feature*: Added basic test for Header component
