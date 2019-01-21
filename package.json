@@ -1,6 +1,6 @@
 {
   "name": "react-babel-webpack-boilerplate",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "Marcus E. Turnbo <marcus@emarcus.com>",
   "description": "React.js Babel Webpack Boilerplate",
   "license": "MIT",
@@ -32,7 +32,8 @@
     "sass-loader": "^6.0.7",
     "webpack": "^3.5.5",
     "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "3.0.0",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "@storybook/addon-actions": "^4.1.6",
@@ -45,8 +46,8 @@
   },
   "main": "index.jsx",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js",
     "lint": "eslint --cache --ignore-path .gitignore --ext .jsx,.js .",
     "test": "jest --config=jest.config.json",
     "dockerbuild": "webpack --config webpack.config.js && docker build -t react-babel-webpack-boilerplate:latest .",

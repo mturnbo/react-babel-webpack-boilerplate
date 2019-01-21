@@ -1,5 +1,9 @@
 # React Babel Webpack Boilerplate
 
+#### v.2.1.1
+* *Update*: Added dev and prod webpack configs
+* *Update*: Downgraded `webpack-dev-server` to version `3.0.0` for compatibility
+
 #### v.2.1.0
 * *Feature*: Added Docker container configuration with nginx on port 8081
 
