@@ -1,5 +1,10 @@
 # React Babel Webpack Boilerplate
 
+#### v.2.2.0
+* *Update*: Updated Header component
+* *Update*: Updated Footer component
+* *Update*: Updated styles - added variables
+
 #### v.2.1.2
 * *Fix*: Fixed paths for webpack configs
 

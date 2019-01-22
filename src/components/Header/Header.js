@@ -1,14 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Header.scss';
 
-class Header extends React.Component {
-  render() {
-    return (
-      <header className="app-header">
-        <h2>React Babel Webpack Boilerplate</h2>
-      </header>
-    );
-  }
-}
+const Header = ({ title, content }) => (
+  <header className="app-header">
+    <div className="app-header-title">{title}</div>
+    {content && <div className="app-header-content">{content}</div>}
+  </header>
+);
+
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string
+};
 
 export default Header;

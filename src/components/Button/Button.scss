@@ -1,3 +1,5 @@
+$btn-radius: 5px 5px 5px 5px;
+
 .btn {
   margin: 5px;
   border: 1px solid #000000;
@@ -6,4 +8,7 @@
   font-size: 14px;
   font-weight: bold;
   width: 50%;
+  -webkit-border-radius: $btn-radius;
+  -moz-border-radius: $btn-radius;
+  border-radius: $btn-radius;
 }

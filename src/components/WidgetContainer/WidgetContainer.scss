@@ -1,3 +1,5 @@
+@import 'assets/styles/variables.scss';
+
 .widget-container {
   display: flex;
   flex-direction: row;
@@ -6,11 +8,11 @@
   -webkit-border-radius: 0px 20px 0px 20px;
   -moz-border-radius: 0px 20px 0px 20px;
   border-radius: 0px 20px 0px 20px;
-  border:2px solid #333333;
-  background-color:#FEFEFE;
-  -webkit-box-shadow: #B3B3B3 10px 10px 10px;
-  -moz-box-shadow: #B3B3B3 10px 10px 10px;
-  box-shadow: #B3B3B3 10px 10px 10px;
+  border:2px solid $border-color;
+  background-color: #FEFEFE;
+  -webkit-box-shadow: $widget-shadow;
+  -moz-box-shadow: $widget-shadow;
+  box-shadow: $widget-shadow;
   margin: 20px;
 
   h1, h2 {

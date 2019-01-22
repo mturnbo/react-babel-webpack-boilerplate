@@ -1,6 +1,14 @@
+@import 'assets/styles/variables.scss';
+
 .app-footer {
-  background-color: khaki;
-  height: 80px;
+  background-color: $header-footer-background;
+  min-height: 100px;
   margin: 0px;
   padding: 10px;
+  border-top: 1px solid $border-color;
+}
+
+.app-footer-title {
+  font-size: 20px;
+  font-weight: bold;
 }
