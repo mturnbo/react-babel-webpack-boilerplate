@@ -4,7 +4,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const BASE_PATH = path.resolve(__dirname, '');
 const MODULES_PATH = path.join(BASE_PATH, 'node_modules');
-const BUILD_PATH = path.join(BASE_PATH, 'dist');
 const APP_PATH = path.join(BASE_PATH, 'src');
 const ASSETS_PATH = path.join(BASE_PATH, 'assets');
 

@@ -1,5 +1,8 @@
 # React Babel Webpack Boilerplate
 
+#### v.2.1.2
+* *Fix*: Fixed paths for webpack configs
+
 #### v.2.1.1
 * *Update*: Added dev and prod webpack configs
 * *Update*: Downgraded `webpack-dev-server` to version `3.0.0` for compatibility
